@@ -93,12 +93,18 @@
 6. Variable name 填 `MOVE_CAR_STATUS`
 7. 选择刚创建的 namespace，点击「Deploy」
 
-### 第四步：配置环境变量
+### 第四步：配置环境变量(任选一个即可）
 
 1. Worker →「Settings」→「Variables and Secrets」
 2. 添加以下变量：
    - `BARK_URL`：你的 Bark 推送地址（如 `https://api.day.app/xxxxx`）
    - `PHONE_NUMBER`：备用联系电话（可选）
+3. 添加 WxPusher 环境变量：
+ - 进入 Workers「设置」→「变量和机密」→「编辑变量」，新增 2 个变量：
+ - 变量名：WXPUSHER_APP_TOKEN → 值：你的 WxPusherAPP_TOKEN
+ - 变量名：WXPUSHER_UID → 值：你的 WxPusher用户 UID
+4. 添加 Server 酱 环境变量：
+ - 变量名称：SERVER_TOLEN  → 值：你的sendkey 
 
 ### 第五步：绑定域名（可选）
 
